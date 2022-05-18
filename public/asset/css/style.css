@@ -1,0 +1,783 @@
+*{
+	margin:0;
+	padding:0;	
+	box-sizing:border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*COMMON CSS*/
+
+i{
+	text-rendering: optimizeLegibility;
+}
+p{
+	margin-bottom: 0;
+	font-size: 14px;
+}
+.theme-bg {
+	background-color: #dc3545;
+}
+.theme-color{
+	color: #dc3545;
+}
+
+.section-header {
+	font-size: 50px;
+	font-weight: 700;
+	padding: 50px;
+	margin-bottom: 0;
+}
+
+.common-header{
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+}
+.common-header::after {
+	position: absolute;
+	content: "";
+	width: 200px;
+	height: 2px;
+	background-color: black;
+	bottom: 0;
+	left: 50%;
+	margin-left: -100px;
+}
+.common-header::before {
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 8px;
+	background-color: #ff8300;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -20px;
+	z-index: 1;
+	border-radius: 6px;
+}
+.common-header h2 {
+	font-size: 28px;
+	font-weight: 600;
+}
+.common-header p{}
+
+.btn-warning-dark {
+	background-color: orange;
+	color: black;
+}
+.btn-warning-dark:hover {
+	background-color: #ea9700;
+	color: black;
+}
+
+/*HEADER SECTION STARTED*/
+
+.header-area {
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	background-color: white;
+}
+.header-area2 {
+	border-bottom: 1px solid #c82333;
+	background-color: white;
+	transition: 0.3s;
+}
+.header-area3 {
+	border-bottom: 1px solid #c82333;
+	background-color: white;
+	transition: 0.3s;
+}
+.header-area #collapse-nav-menu {
+	display: none;
+}
+.header{}
+.logo {
+	float: left;
+	width: 250px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 42px;
+	text-transform: capitalize;
+	color: white;
+	font-weight: 700;
+	text-shadow: 5px 0px 0px orange;
+	letter-spacing: 4px;
+}
+.header-area2 .logo a {
+	color: black;
+}
+.header-area3 .logo a {
+	color: black;
+}
+.logo a img {
+	width: 80px;
+}
+.logo a span{
+	
+}
+.nav {
+	float: right;
+}
+#nav-menu {
+	padding: 24px 0 0 0;
+}
+#nav-menu li {
+	list-style: none;
+	display: inline;
+}
+#nav-menu li a {
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+}
+#nav-menu li a:hover {
+	text-decoration: none;
+}
+#nav-menu li button {
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+}
+.header-area2 #nav-menu li a:hover {
+	text-decoration: none;
+}
+.active-menu {
+	color: white !important;
+}
+.dropdown-item {
+	color: black !important;
+	padding: 10px !important;
+	font-size: 14px;
+}
+.nav-item.dropdown {
+	display: inline-block;
+}
+.nav-item .dropdown-menu{
+	display:block;
+	opacity: 0;
+	visibility: hidden;
+	transition:.3s;
+	margin-top:15px;
+}
+.nav-item:hover .nav-link{
+}
+.dropdown-menu.fade-up{
+	top:180%;
+}
+.nav-item:hover .dropdown-menu{
+	transition: .3s;
+	opacity:1;
+	visibility:visible;
+	top:100%;
+	transform: rotateX(0deg);
+}
+.menu-dropdown {
+	margin-top: 20px;
+}
+.menu-dropdown:hover {
+	background: transparent;
+	color: black;
+}
+.nav-dropdown-menu{}
+.nav-dropdown-menu li{}
+.nav-dropdown-menu li a {
+	display: block;
+	color: black;
+	font-size: 14px;
+	padding: 4px 10px;
+}
+
+/* Home Banner */
+
+.banner-area {
+	background-image: url("../img/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 2;
+	min-height: 60vh;
+	//min-height: -webkit-fill-available;
+}
+.banner-area::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+}
+.banner {
+	
+}
+::i-block-chrome,.banner {
+	min-height: 665px;
+}
+.banner-form {
+	position: relative;
+	z-index: 1;
+	margin: 160px 0;
+	padding: 40px;
+	color: white;
+}
+.banner-form h1 {
+	font-weight: 600;
+	font-size: 48px;
+	margin-bottom: 0;
+	text-align: center;
+}
+.banner-form h6 {
+	font-size: 18px;
+	margin: 10px 0 20px 0;
+	text-align: center;
+}
+.banner-form .form-group {
+	margin: 0;
+	padding: 0;
+}
+.banner-form .form-control {
+	border-radius: 0 !important;
+}
+.banner-form button{
+	font-weight: 600;
+	border-radius: 0 !important;
+}
+
+/* Restaurant List */
+
+.restaurant-list-area{}
+.restaurant-list {
+	padding: 100px 0;
+}
+.all-restaurants{}
+.all-restaurants a{
+	color: black;
+	text-decoration: none;
+}
+.all-restaurants a:hover{
+	color: black;
+	text-decoration: none;
+}
+.single-restaurant {
+	margin-bottom: 30px;
+	border: 1px solid #ffa5008f;
+	position: relative;
+	transition: 0.5s;
+}
+.single-restaurant::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-left: 1px solid red;
+	border-top: 1px solid red;
+}
+.single-restaurant::after {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-right: 1px solid red;
+	border-bottom: 1px solid red;
+}
+.single-restaurant-img {
+	height: 160px;
+	overflow: hidden;
+}
+.single-restaurant-img img {
+	width: 100%;
+}
+.single-restaurant-desc {
+	//background: pink;
+	padding: 10px;
+}
+.single-restaurant-desc h4 {
+	font-weight: 600;
+	font-size: 18px;
+}
+.single-restaurant-desc i {
+	color: orange;
+	font-size: 12px;
+	margin: 0;
+}
+.single-restaurant-desc p {
+	font-size: 13px;
+	margin-top: 5px;
+}
+.single-restaurant-desc ul {
+	
+}
+.single-restaurant-desc ul li {
+	font-size: 13px;
+	display: inline;
+	color: #4d4d4d;
+	margin-right: 5px;
+}
+.single-restaurant-desc h5 {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.single-restaurant-desc h5 i {
+	color: black;
+	margin-right: 5px;
+}
+.single-restaurant:hover {
+	margin-top: -15px;
+	transition: 0.5s;
+}
+.single-restaurant:hover .single-restaurant-img img {
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+.single-restaurant:hover::before {
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+.single-restaurant:hover::after {
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+.moving-icon button {
+	min-width: 150px;
+	text-align: left;
+	padding: 3px 5px 6px 35px;
+}
+.moving-icon button i {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 10px;
+	animation: IconAnimate 1.3s infinite;
+	text-rendering: optimizeLegibility;
+}
+@keyframes IconAnimate{
+	0%{
+		padding-left: 5px;
+	}
+	50%{
+		padding-left: 20px;
+	}
+}
+
+/* Reviews  */
+
+.review-area{
+	background-color: #f6f5ff;
+}
+.review{
+	padding: 100px 0;
+	color: black;
+}
+.reviews{
+	
+}
+.single-review {
+	background-color: white;
+	padding: 20px;
+}
+.single-review img{}
+.review-profile{}
+.review-heading{}
+.review-heading i{
+	color: orange;
+}
+.review-heading h6 {
+	font-weight: 600;
+	margin: 5px 0;
+}
+.review-desc{}
+.review-desc p {
+	margin-top: 10px;
+}
+.review-published{}
+.review-published p {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+/*Owl Start*/
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+	display: block;
+}
+.owl-prev span {
+	color: white;
+	background-color: #48C09E;
+	position: absolute;
+	content: "";
+	top: 32%;
+	left: -80px;
+	padding: 0px 12px 4px 12px;
+	font-weight: bold;
+	font-size: 28px;
+}
+.owl-next span {
+	color: white;
+	background-color: #48C09E;
+	position: absolute;
+	content: "";
+	top: 32%;
+	right: -80px;
+	padding: 0px 12px 4px 12px;
+	font-weight: bold;
+	font-size: 28px;
+}
+.owl-nav {
+	display: none !important;
+}
+.owl-dots {
+	margin: 50px auto 0 auto;
+	width: fit-content;
+}
+.owl-dot{
+	
+}
+.owl-dot span {
+	padding: 6px;
+	display: inline-block;
+	margin: 0 10px;
+	background: #b5b5b5;
+	border-radius: 45px;
+}
+.owl-dot.active span{
+	background-color: gray;
+}
+/*Owl End*/
+
+/* Restaurant View */
+
+.restaurant-banner-area{}
+.restaurant-banner {
+	position: relative;
+	max-height: 500px;
+	overflow: hidden;
+}
+.restaurant-banner img {
+	width: 100%;
+}
+.bookmark{}
+.bookmark button {
+	position: absolute;
+	top: 100px;
+	right: 30px;
+	background-color: white;
+	font-size: 14px;
+}
+.bookmark button i{
+	margin-right: 10px;
+}
+.restaurant-description-area{
+	position: relative;
+}
+.restaurant-description{}
+.restaurant-description-left {
+	position: relative;
+	right: 10px;
+	top: -50px;
+	background: white;
+	padding: 10px 20px;
+	border-radius: 15px;
+}
+.restaurant-description-menu{}
+.restaurant-description-menu ul {
+	list-style: none;
+	border-bottom: 1px solid #a6a6a685;
+}
+.restaurant-description-menu ul li {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px;
+}
+.restaurant-description-header{
+	
+}
+.restaurant-description-header h1 {
+	font-size: 28px;
+	font-weight: 600;
+}
+.restaurant-description-photos {
+	padding-bottom: 20px;
+}
+.restaurant-description-reviews{}
+.restaurant-description-reviews i{
+	font-size: 12px;
+	color: #4a4a4a;
+}
+.restaurant-description-reviews p {
+	display: inline-block;
+	padding-left: 5px;
+	font-size: 12px;
+	color: #4a4a4a;
+}
+.stars{}
+.stars i{
+	color: orange;
+}
+.restaurant-description-tags {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.restaurant-description-tags p {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 13px;
+}
+.restaurant-description-tags button {
+	font-size: 10px;
+	padding: 2px 6px;
+	border: 1px solid #8080805e;
+	color: #555;
+}
+.restaurant-description-desc{
+	border: 1px solid #a6a6a685;
+	padding: 20px;
+	margin: 10px 0;
+}
+.restaurant-description-desc p {
+	font-size: 14px;
+}
+.restaurant-description-desc h6 {
+	font-weight: 600;
+}
+.restaurant-description-desc ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+.restaurant-description-desc ul li {
+	font-size: 14px;
+	color: #606060;
+}
+.restaurant-description-desc ul li b {
+	color: black;
+	display: inline-block;
+	min-width: 150px;
+}
+.sub-header {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 20px 0;
+	margin-left: -15px;
+}
+.restaurant-description-review{}
+.restaurant-description-review .single-review {
+	background-color: #eee;
+	padding: 20px;
+}
+
+.review-form {
+	background-color: #eeeeee75;
+	padding: 20px 50px;
+	border: 1px solid #8080803b;
+	margin-bottom: 50px;
+}
+.review-form h4 {
+	font-weight: 700;
+	font-size: 26px;
+}
+.review-form form{
+	margin-top: 20px;
+}
+.review-form form label{
+	font-weight: 600;
+}
+.review-form form input{}
+.review-form form button{
+	margin-top: 20px;
+}
+
+/* Rating */
+
+.star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+  opacity: 1;
+}
+.star-rating i ~ i {
+  width: 40%;
+}
+.star-rating i ~ i ~ i {
+  width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+::after,
+::before {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.star-rating.star-5 {width: 150px;}
+.star-rating.star-5 input,
+.star-rating.star-5 i {width: 20%;}
+.star-rating.star-5 i ~ i {width: 40%;}
+.star-rating.star-5 i ~ i ~ i {width: 60%;}
+.star-rating.star-5 i ~ i ~ i ~ i {width: 80%;}
+.star-rating.star-5 i ~ i ~ i ~ i ~i {width: 100%;}
+
+/* Footer */
+
+.footer-area {
+	background-color: #424242;
+}
+.footer{
+	
+}
+::i-block-chrome,.footer {
+	min-height: 50px;
+}
+.footer p {
+	padding: 15px 0;
+}
+
+/* Sign Up */
+
+.sign-up-area {
+	min-height: 100vh;
+}
+.sign-up {}
+.sign-up-form {
+	padding: 0 40px 40px 40px;
+	position: relative;
+	z-index: 1;
+	color: black;
+}
+.sign-up-form h3 {
+	padding: 30px 0;
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+}
+.sign-up-form form{}
+.sign-up-form form label {
+	font-size: 21px;
+}
+.sign-up-form form input{}
+.sign-up-button {
+	background-color: black;
+	border: 0;
+	color: white;
+	margin: 10px 0;
+	font-weight: 800;
+	padding: 10px 20px;
+	border-radius: 6px;
+}
+.sign-up-button:hover {
+	background-color: #4bc496;
+}
+.sign-up-form a {
+	color: orange;
+	text-decoration: none;
+	font-size: 14px;
+}
+.sign-up-form a:hover{
+	color: orange;
+	text-decoration: none;
+}
+.sign-up-form .text-center{}
+.sign-up-form .box-btn {
+	border: 1px solid #dc3545;
+	background-color: #dc3545;
+	color: white;
+	padding: 8px 30px;
+	border-radius: 17px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.sign-up-form .box-btn:hover {
+	border: 1px solid white;
+}
+.sign-up-right {
+	background-image: url("../img/restaurant.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	background-attachment: fixed;
+}
+.app-logo{
+	margin-top: 10px;
+	border-bottom: 1px solid #cecece;
+}
+.app-logo a {}
+.app-logo a img {
+	width: 30%;
+	margin: 0 35%;
+}
+
+/* Scroll Top */
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: orange;
+	color: black;
+	cursor: pointer;
+	padding: 2px 13px;
+	font-size: 24px;
+}
+#myBtn i{
+	text-rendering: optimizeLegibility;
+}
+#myBtn:hover {
+	background-color: #ff8f00;
+	color: white;
+}

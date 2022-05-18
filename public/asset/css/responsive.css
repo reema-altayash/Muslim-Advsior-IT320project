@@ -1,0 +1,252 @@
+@media only screen and (min-width: 1501px) {
+	
+}
+
+/* XL Device :1200px. 1170px */
+@media (min-width: 1200px) and (max-width: 1500px) {
+	
+}
+/* Medium Layout: 1000px.  */
+ 
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.banner-form h1 {
+		font-size: 32px;
+	}
+	
+	.single-restaurant-img {
+		height: 120px;
+	}
+	.single-restaurant-desc h4 {
+		font-size: 15px;
+	}
+	.single-restaurant-desc h5 {
+		font-size: 12px;
+	}
+}
+
+
+
+
+/* Tablet Layout: 768px.  750px*/
+ 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.section-header {
+		font-size: 36px;
+	}
+
+	.logo {
+		margin: 0 0;
+	}
+	.logo a img {
+		width: 25%;
+	}
+	#nav-menu {
+		padding: 18px 0 0 0;
+		display: block;
+	}
+	
+	.banner-form h1 {
+		font-size: 30px;
+	}
+	.single-restaurant-img {
+		height: 120px;
+	}
+	.single-restaurant-desc h4 {
+		font-size: 14px;
+	}
+	.single-restaurant-desc i {
+		font-size: 6px;
+	}
+	.single-restaurant-desc p {
+		font-size: 10px;
+	}
+	.single-restaurant-desc h5 {
+		font-size: 12px;
+	}
+	.subscribe-box p {
+		padding: 0 200px;
+	}
+	
+	.restaurant-description-left {
+		left: 0;
+	}
+	.restaurant-description-right {
+		left: 0;
+	}
+	
+	.sign-up-form {
+		padding: 0 0 40px 0;
+	}
+	.sign-up-form p {
+		font-size: 13px;
+	}
+	.sign-up-form a {
+		font-size: 13px;
+	}
+	
+}
+
+
+/* Mobile Layout: 320px. */
+ 
+@media only screen and (max-width: 767px) {	
+	p {
+		font-size: 13px;
+	}
+	.section-header {
+		font-size: 28px;
+	}
+	.logo a img {
+		width: 60px;
+	}
+	.owl-carousel .owl-item img {
+		width: 30%;
+		margin: 0 35%;
+	}
+	.review-heading {
+		text-align: center;
+	}
+	.banner-area {
+		min-height: 100vh;
+	}
+	.banner-form::before {
+		width: 0;
+		height: 0;
+	}
+	.banner-form h1 {
+		color: white;
+		font-size: 22px;
+	}
+	.banner-form h6 {
+		font-size: 14px;
+	}
+	.banner-form {
+		margin: 120px 0 50px 0;
+		padding: 10px;
+	}
+	.banner-form .form-group {
+		margin-bottom: 10px;
+	}
+	.restaurant-list {
+		padding: 100px 10px;
+	}
+	.moving-icon button {
+		min-width: 125px;
+		font-size: 12px;
+	}
+	.single-review {
+		text-align: center;
+	}
+	
+	.restaurant-description-left {
+		right: 0;
+		top: 0;
+		padding: 0px 0px;
+		border-radius: 0;
+	}
+	.bookmark button {
+		position: absolute;
+		top: 70px;
+		right: 5px;
+		font-size: 10px;
+	}
+	.restaurant-description-menu ul li {
+		font-size: 12px;
+		padding: 6px;
+	}
+	.restaurant-description-header h1 {
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+	.restaurant-description-photos .col-md-3 {
+		margin: 2px 0;
+		width: 49%;
+		padding: 0;
+	}
+	.sub-header {
+		font-size: 14px;
+	}
+	
+	.restaurant-description-desc ul li {
+		font-size: 12px;
+		margin: 5px 0;
+	}
+	.restaurant-description-desc ul li b {
+		min-width: 10px;
+	}
+	.restaurant-description-desc p {
+		font-size: 12px;
+	}
+	.sub-header {
+		margin-left: 0;
+	}
+	
+	.review-form {
+		padding: 20px 10px;
+		margin: 50px 0;
+	}
+	.review-form h4 {
+		font-size: 18px;
+	}
+	.review-form form label {
+		font-size: 14px;
+	}
+	
+	.menu-left {
+		width: 30%;
+	}
+	.menu-right {
+		width: 70%;
+	}
+	.logo a {
+		font-size: 32px;
+	}
+	#nav-menu {
+		padding: 10px 0 0 0;
+	}
+	#nav-menu li button {
+		font-size: 12px;
+		padding: 3px 6px;
+	}
+	
+	
+	
+	.sign-up-form h3 {
+		padding: 10px 0;
+		font-size: 22px;
+	}
+	.sign-up-form {
+		width: 100%;
+		padding: 10px;
+	}
+	.sign-up-form form input {
+		font-size: 14px;
+		padding: 6px;
+	}
+	.sign-up-form p{
+		text-align: left;
+	}
+	.sign-up-form a{
+		font-size: 13px;
+	}
+	
+	.sign-up-right {
+		display: none;
+	}
+}
+
+
+/* Wide Mobile Layout: 480px. */
+ 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.banner-form {
+		margin: 150px 0 50px 0;
+		padding: 10px;
+	}
+	.single-restaurant-img {
+		height: 300px;
+	}
+	.single-restaurant-img img {
+		width: 100%;
+	}
+}

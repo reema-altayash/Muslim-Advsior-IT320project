@@ -1,0 +1,10 @@
+{
+    "name": "hr/hotel",
+    "description": "Hotel Review App",
+    "autoload": {
+        "psr-4": {
+            "HR\\HotelReview\\": "app/"
+        }
+    },
+    "require": {}
+}
